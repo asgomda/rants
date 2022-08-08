@@ -31,8 +31,8 @@ app.set('view engine', '.hbs');
 // express session 
 app.use(session({
     secret: 'veryUniqueSecret',
-    resave: false,
     saveUninitialized: false,
+    resave: false,
     store: MongoStore.create({ 
         mongoUrl: process.env.MONGO_URI,
         // mongooseConnection: mongoose.connection 

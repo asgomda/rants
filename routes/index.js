@@ -6,7 +6,7 @@ const {ensureAuthenticated, ensureGuest} = require('../middleware/auth')
 
 // @desc Login/Landing page
 //@route /
-router.get('/', (req, res) => {
+router.get('/', ensureGuest, (req, res) => {
     res.render('login', {
         layout: 'login'
     })
@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 
 // @desc dashboard page
 //@route /dashboard
-router.get('/dashboard', (req, res) => {
+router.get('/dashboard', ensureAuthenticated, (req, res) => {
     res.render('dashboard')
 })
 
