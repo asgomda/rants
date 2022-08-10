@@ -6,3 +6,16 @@ p {
     margin-top: 2.5%;
     text-align: center;
 }
+
+.fa-small {
+    font-size: 90% !important;
+}
+
+.btn-float {
+    float: left;
+    margin-right: 10%;
+}
+
+.img-small {
+    width: 50%;
+}

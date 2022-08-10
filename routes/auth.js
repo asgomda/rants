@@ -12,6 +12,7 @@ router.get('/google/callback',
     passport.authenticate('google', {failureRedirect: '/', failureMessage: true }),
     (req, res) => {
         res.redirect('/dashboard')
+        req.session.history = []
     }
 )
 

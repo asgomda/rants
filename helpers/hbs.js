@@ -17,4 +17,27 @@ module.exports = {
         }
         return str
       },
+      editIcon: function (rantUser, rantId, loggedUser , floating = true) {
+        if (rantUser._id.toString() == loggedUser._id.toString()) {
+          if (floating) {
+            return `<a href="/rants/edit/${rantId}" class="btn-floating halfway-fab blue"><i class="fas fa-edit fa-small"></i></a>`
+          } else {
+            return `<a href="/rants/edit/${rantId}"><i class="fas fa-edit"></i></a>`
+          }
+        } else {
+          return ''
+        }
+      },
+      select: function (selected, options) {
+        return options
+          .fn(this)
+          .replace(
+            new RegExp(' value="' + selected + '"'),
+            '$& selected="selected"'
+          )
+          .replace(
+            new RegExp('>' + selected + '</option>'),
+            ' selected="selected"$&'
+          )
+      },
 }
