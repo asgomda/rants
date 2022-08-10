@@ -17,16 +17,15 @@ router.get('/', ensureGuest, (req, res) => {
 router.get('/dashboard', ensureAuthenticated, async (req, res) => {
     try {
         // finding stories in dashboard
-        const rants = await Rant.find({user: req.user.id})
+        const rants = await Rant.find({user: req.user.id}).lean() // lean needed for hbs to access data
         res.render('dashboard', {
             name: req.user.firstName,
             rants
         })
     } catch (error) {
         console.log(error)
+        res.render('/errors/500')
     }
-    
-
 })
 
 
