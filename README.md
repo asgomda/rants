@@ -4,7 +4,7 @@
 Rants is a web App where users can share both public and private rants.
 
 
-## Features
+## 💫Features
 
 - Create, Read, Update and Delete Rants
 - Public Community Rants
@@ -12,7 +12,7 @@ Rants is a web App where users can share both public and private rants.
 - Google OAUTH
 
 
-## Tech Stack
+## ⚡️Tech Stack
 
 - NodeJS
 - ExpressJS
@@ -20,7 +20,7 @@ Rants is a web App where users can share both public and private rants.
 - Handlebars
 
 
-## Run Locally
+## 👨🏾‍💻Runing Locally
 
 This project is developed under the [MIT](https://choosealicense.com/licenses/mit/) lincence. Feel free to clone the repository, make changes, issue pull requests etc.
 Also, be sure to generate a Google oauth20 clientID and secret for the authentication
@@ -40,13 +40,13 @@ Start the server
 The app should then be running on `http:localhost:8095`
 
 
-## Acknowledgements
+## 👨🏿‍🏫Acknowledgements
 
 This application was inspired by Brad Traversy of [Traversy Media](https://www.traversymedia.com/)
  
 
 
-## License
+## 📚License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
