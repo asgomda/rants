@@ -34,12 +34,13 @@ module.exports = function(passport){
 
     // serializing and deserializing for subsequent requests
     passport.serializeUser((user, done)=>{
-        done(null, user.id)
+
+        return done(null, user.id)
     })
 
-    passport.deserializeUser((user, done)=>{
-        User.findById(user.id, (err, user)=>{
-            done(err, user)
+    passport.deserializeUser((userId, done)=>{
+        User.findById(userId, (err, user)=>{
+           return done(err, user)
         })
     })
 }
