@@ -1,7 +1,7 @@
 
 # Project Title
 
-Rants is a web App where users can share both public and private rants.
+Rants is a web App where users can share both public and private rants. The app is live [here](https://rants-app.herokuapp.com/)
 
 
 ## 💫Features
