@@ -1,11 +1,23 @@
 p {
     margin: 10px 0 !important;
 }
+
 .login-container{
-    width: 20%;
+    width: 75% !important;
     margin-top: 2.5%;
     text-align: center;
 }
+
+.login-card{
+    width: 100% !important;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .login-container {width: 25% !important;}
+    .login-card{
+        width: 100% !important;
+    }
+  }
 
 .fa-small {
     font-size: 90% !important;
